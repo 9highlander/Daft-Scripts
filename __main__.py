@@ -79,8 +79,6 @@ dublin_map.save("ireland_rent.html")
 move_file(" ","\outputs","result.txt")
 move_file(" ","\outputs","ireland_rent.html")
 
-print("var", result['open_browser'])
-
 if result['open_browser'] == 'Yes' :
   open_html("outputs", "ireland_rent.html")
 
