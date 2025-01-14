@@ -48,3 +48,7 @@ There is already an example file api_maps_example.json , you can just rename it 
 
 
 Make sure to consider the date and time you give to google maps api because affect the time calculated
+
+See results as a web base map
+![image](https://github.com/user-attachments/assets/6d7dfb46-fcdd-4d58-aae3-52620e21f624)
+
