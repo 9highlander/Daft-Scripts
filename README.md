@@ -40,7 +40,8 @@ pip install -r requirements.txt
 Simply run  __main__.py and compile the search fields. You can save ypur input searches file for future usure.
 ![image](https://github.com/user-attachments/assets/c18f6112-126c-4ade-a438-f1333d6ef5ec)
 
-![image](https://github.com/user-attachments/assets/d79c0643-730a-4747-a98d-d13353afe90e)
+![image](https://github.com/user-attachments/assets/3477289c-5b44-42bb-af29-1a3df14c3c3b)
+
 
 If you choose to use Google Maps Api you need to insert your API key in the json file(Daftscript/api/api/qpi_maps).
 There is already an example file api_maps_example.json , you can just rename it api_mapse.json.
