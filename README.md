@@ -1,5 +1,5 @@
 # DaftScripts - daft.ie search with public transport time
-A script that use daftlisting library to enable interaction with [Daft.ie](https://daft.ie) and call Google Maps API to know the distance with public transport.
+A script with GUI that use daftlisting library to enable interaction with [Daft.ie](https://daft.ie) and call Google Maps API to know the distance with public transport.
 I make the script for personal purpose because when i search for a home the commuting time factor is an important factor.
 However at the moment this script is more a code exercise for exercise with API calling , pandas and other things.
 
