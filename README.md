@@ -54,7 +54,8 @@ Simply run  __main__.py and compile the search fields. You can save ypur input s
 
 
 ### See  results
-See results as a web base map (made with folium)
+The results saved as a map in an html page (made with folium).
+You can choose if open directly the results map in yout default browser or not.
 
 ![image](https://github.com/user-attachments/assets/6d7dfb46-fcdd-4d58-aae3-52620e21f624)
 
