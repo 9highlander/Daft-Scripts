@@ -46,7 +46,7 @@ Note than .gitignore file already excludes api_mapse.json file.
 Make sure to consider the date and time you give to google maps api because affect the time calculated.
 
 ### Start the script
-Simply run  __main__.py and compile the search fields. You can save ypur input searches file for future usure.
+Simply run  __main__.py and compile the search fields. You can save your input searches file for future usure.
 
 ![image](https://github.com/user-attachments/assets/c18f6112-126c-4ade-a438-f1333d6ef5ec)
 
