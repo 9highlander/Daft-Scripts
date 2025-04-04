@@ -1,6 +1,6 @@
 import pandas as pd
 from daftlistings import Daft, Location, SearchType, PropertyType, SortType, MapVisualization
-from scripts import add_time, add_distance, coord_finder, map_gen, move_file, open_html, run_input_form, actual_time, read_json
+from daft_scripts import add_time, add_distance, coord_finder, map_gen, move_file, open_html, run_input_form, actual_time, read_json
 import webbrowser
 import datetime
 
