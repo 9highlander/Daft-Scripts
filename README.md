@@ -41,14 +41,15 @@ If you choose to use Google Maps Api you need to insert your API key in the json
 There is already an example file api_maps_example.json , you can just rename it api_mapse.json.
 Note than .gitignore file already excludes api_mapse.json file.
 
-![image](https://github.com/user-attachments/assets/6c215fd4-76e4-4fa1-99fd-f67b683f4288)
+![image](https://github.com/user-attachments/assets/53235b80-e3dd-4966-ad24-ace98acd4750)
+
 
 Make sure to consider the date and time you give to google maps api because affect the time calculated.
 
 ### Start the script
-Simply run  __main__.py and compile the search fields. You can save your input searches file for future usure.
+Simply run  daft_script.py (daft_scripts/daft/scripts.py) or maintest.py(tests/main_test.py) and compile the search fields. You can save your input searches file for future usure.
+![image](https://github.com/user-attachments/assets/36abb30c-3506-409c-b7ff-fc4d1af3c051)
 
-![image](https://github.com/user-attachments/assets/c18f6112-126c-4ade-a438-f1333d6ef5ec)
 
 ![image](https://github.com/user-attachments/assets/c6390fa1-7397-41f7-8f64-bb968154bd65)
 
