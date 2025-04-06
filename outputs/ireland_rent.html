@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_5f6402abfa78536ce191607ed61c662a {
+                #map_cd3e01ef5cc46499ee52dc804b27f71f {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,175 +35,396 @@
                 .leaflet-container { font-size: 1rem; }
             </style>
         
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
 </head>
 <body>
     
     
-            <div class="folium-map" id="map_5f6402abfa78536ce191607ed61c662a" ></div>
+            <div class="folium-map" id="map_cd3e01ef5cc46499ee52dc804b27f71f" ></div>
         
 </body>
 <script>
     
     
-            var map_5f6402abfa78536ce191607ed61c662a = L.map(
-                "map_5f6402abfa78536ce191607ed61c662a",
+            var map_cd3e01ef5cc46499ee52dc804b27f71f = L.map(
+                "map_cd3e01ef5cc46499ee52dc804b27f71f",
                 {
-                    center: [53.391472775267516, -6.183217245857094],
+                    center: [53.491321279130005, -6.12998279833684],
                     crs: L.CRS.EPSG3857,
                     zoom: 12,
                     zoomControl: true,
                     preferCanvas: false,
                 }
             );
-            L.control.scale().addTo(map_5f6402abfa78536ce191607ed61c662a);
+            L.control.scale().addTo(map_cd3e01ef5cc46499ee52dc804b27f71f);
 
             
 
         
     
-            var tile_layer_634a99ead1e5ab13513853c2c0ebe6ba = L.tileLayer(
+            var tile_layer_13f1132a02a43b41d23fd67e1f147d3a = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_634a99ead1e5ab13513853c2c0ebe6ba.addTo(map_5f6402abfa78536ce191607ed61c662a);
+            tile_layer_13f1132a02a43b41d23fd67e1f147d3a.addTo(map_cd3e01ef5cc46499ee52dc804b27f71f);
         
     
-            var marker_2cc598f3494eb0f84dfd2a45cdfd5e7e = L.marker(
-                [53.391472775267516, -6.183217245857094],
+            var marker_cluster_3eccb79dc1c0945bd6fce193ddbb5406 = L.markerClusterGroup(
                 {}
-            ).addTo(map_5f6402abfa78536ce191607ed61c662a);
+            );
         
     
-            var icon_7a8a514ff6a206cd760c274ed506a015 = L.AwesomeMarkers.icon(
+            var marker_9b714f105b87ab6851d1736746cfd396 = L.marker(
+                [53.491321279130005, -6.12998279833684],
+                {}
+            ).addTo(marker_cluster_3eccb79dc1c0945bd6fce193ddbb5406);
+        
+    
+            var icon_6e8f85f694dca114dd399acd6fd10b22 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
             );
-            marker_2cc598f3494eb0f84dfd2a45cdfd5e7e.setIcon(icon_7a8a514ff6a206cd760c274ed506a015);
+            marker_9b714f105b87ab6851d1736746cfd396.setIcon(icon_6e8f85f694dca114dd399acd6fd10b22);
         
     
-        var popup_f5881834c8c6ab3738cbdf4f9027665e = L.popup({"maxWidth": "100%"});
+        var popup_fc7a842943edf5c7edab050148cf9dc2 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_ac3cbae9100332d9ab8bdde4884c706b = $(`<div id="html_ac3cbae9100332d9ab8bdde4884c706b" style="width: 100.0%; height: 100.0%;"><p>Bedrooms: 3 Bed</p><p>Traveltime: n/a</p><p>Distance: 5.89815598263755</p><p>Bathrooms: 2 Bath</p><a href=" http://www.daft.ie/for-rent/house-limewood-court-raheny-dublin-5/5965794 "target="_blank"> link </a></div>`)[0];
-                popup_f5881834c8c6ab3738cbdf4f9027665e.setContent(html_ac3cbae9100332d9ab8bdde4884c706b);
+                var html_b10e12c34def2d783bb51b859e94bef2 = $(`<div id="html_b10e12c34def2d783bb51b859e94bef2" style="width: 100.0%; height: 100.0%;"><p>Bedrooms: 3 Bed</p><p>Traveltime: n/a</p><p>Distance: 10.460307409793156</p><p>Bathrooms: 1 Bath</p><a href=" http://www.daft.ie/for-rent/apartment-3-bed-apartment-ballymastone-balmoston-donabate-co-dublin-ballymastone-balmoston-donabate-co-dublin/6072529 "target="_blank"> link </a></div>`)[0];
+                popup_fc7a842943edf5c7edab050148cf9dc2.setContent(html_b10e12c34def2d783bb51b859e94bef2);
             
         
 
-        marker_2cc598f3494eb0f84dfd2a45cdfd5e7e.bindPopup(popup_f5881834c8c6ab3738cbdf4f9027665e)
+        marker_9b714f105b87ab6851d1736746cfd396.bindPopup(popup_fc7a842943edf5c7edab050148cf9dc2)
         ;
 
         
     
     
-            marker_2cc598f3494eb0f84dfd2a45cdfd5e7e.bindTooltip(
+            marker_9b714f105b87ab6851d1736746cfd396.bindTooltip(
                 `<div>
-                     2100
+                     1747
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_6b0a52c99e135be42a92e28d0562a439 = L.marker(
-                [53.323472, -6.280466],
+            var marker_7c5f00045c1197ef2702a2b33368e6e3 = L.marker(
+                [53.491321279130005, -6.12998279833684],
                 {}
-            ).addTo(map_5f6402abfa78536ce191607ed61c662a);
+            ).addTo(marker_cluster_3eccb79dc1c0945bd6fce193ddbb5406);
         
     
-            var icon_e5c0b623df1107ec8f025a76accf27b2 = L.AwesomeMarkers.icon(
+            var icon_4d2b3a5ed2fb06f46244c8c2342f75e9 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_6b0a52c99e135be42a92e28d0562a439.setIcon(icon_e5c0b623df1107ec8f025a76accf27b2);
+            marker_7c5f00045c1197ef2702a2b33368e6e3.setIcon(icon_4d2b3a5ed2fb06f46244c8c2342f75e9);
         
     
-        var popup_4d0c0e1e559fe2779f32a3627fe3329e = L.popup({"maxWidth": "100%"});
+        var popup_7c80e8e781222c76e0217d4613af869d = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_9401a8ac8c32948e30f444ffeecace9a = $(`<div id="html_9401a8ac8c32948e30f444ffeecace9a" style="width: 100.0%; height: 100.0%;"><p>Bedrooms: 3 Bed</p><p>Traveltime: n/a</p><p>Distance: 11.861560198174635</p><p>Bathrooms: 2 Bath</p><a href=" http://www.daft.ie/for-rent/apartment-laurence-court-mount-argus-road-harolds-cross-dublin-6w/5955780 "target="_blank"> link </a></div>`)[0];
-                popup_4d0c0e1e559fe2779f32a3627fe3329e.setContent(html_9401a8ac8c32948e30f444ffeecace9a);
+                var html_cd6cd91868395b8093f38ff67e3c3851 = $(`<div id="html_cd6cd91868395b8093f38ff67e3c3851" style="width: 100.0%; height: 100.0%;"><p>Bedrooms: 3 Bed</p><p>Traveltime: n/a</p><p>Distance: 10.460307409793156</p><p>Bathrooms: 1 Bath</p><a href=" http://www.daft.ie/for-rent/apartment-3-bed-duplex-ballymastone-balmoston-donabate-co-dublin-ballymastone-balmoston-donabate-co-dublin/6072532 "target="_blank"> link </a></div>`)[0];
+                popup_7c80e8e781222c76e0217d4613af869d.setContent(html_cd6cd91868395b8093f38ff67e3c3851);
             
         
 
-        marker_6b0a52c99e135be42a92e28d0562a439.bindPopup(popup_4d0c0e1e559fe2779f32a3627fe3329e)
+        marker_7c5f00045c1197ef2702a2b33368e6e3.bindPopup(popup_7c80e8e781222c76e0217d4613af869d)
         ;
 
         
     
     
-            marker_6b0a52c99e135be42a92e28d0562a439.bindTooltip(
+            marker_7c5f00045c1197ef2702a2b33368e6e3.bindTooltip(
                 `<div>
-                     2197
+                     1795
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_6d17d14c481fe2424d75c5fefff751e9 = L.marker(
-                [53.395013, -6.128776],
-                {}
-            ).addTo(map_5f6402abfa78536ce191607ed61c662a);
+            marker_cluster_3eccb79dc1c0945bd6fce193ddbb5406.addTo(map_cd3e01ef5cc46499ee52dc804b27f71f);
         
     
-            var icon_620eaaa76fe93ee82206314b1cfb1f36 = L.AwesomeMarkers.icon(
+            var marker_96a2bacbec3de46c748304a3a50daa5d = L.marker(
+                [53.3926055, -6.2996635],
+                {}
+            ).addTo(map_cd3e01ef5cc46499ee52dc804b27f71f);
+        
+    
+            var icon_bc0d2202496030e8e29525a7628fe7e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_96a2bacbec3de46c748304a3a50daa5d.setIcon(icon_bc0d2202496030e8e29525a7628fe7e0);
+        
+    
+        var popup_5fbda3500e3d844f69a91359752777d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_160051eac8c187f55463f3751dbda170 = $(`<div id="html_160051eac8c187f55463f3751dbda170" style="width: 100.0%; height: 100.0%;"><p>Bedrooms: 3 Bed</p><p>Traveltime: n/a</p><p>Distance: 5.272916377071523</p><p>Bathrooms: 2 Bath</p><a href=" http://www.daft.ie/for-rent/apartment-clearstream-court-finglas-finglas-dublin-11/6015660 "target="_blank"> link </a></div>`)[0];
+                popup_5fbda3500e3d844f69a91359752777d6.setContent(html_160051eac8c187f55463f3751dbda170);
+            
+        
+
+        marker_96a2bacbec3de46c748304a3a50daa5d.bindPopup(popup_5fbda3500e3d844f69a91359752777d6)
+        ;
+
+        
+    
+    
+            marker_96a2bacbec3de46c748304a3a50daa5d.bindTooltip(
+                `<div>
+                     1915
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae1567b8094382589c52a6d0c52d27a9 = L.marker(
+                [53.3714041, -6.3699573],
+                {}
+            ).addTo(map_cd3e01ef5cc46499ee52dc804b27f71f);
+        
+    
+            var icon_6c504bce02cd0686b848f5779dd78d72 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
             );
-            marker_6d17d14c481fe2424d75c5fefff751e9.setIcon(icon_620eaaa76fe93ee82206314b1cfb1f36);
+            marker_ae1567b8094382589c52a6d0c52d27a9.setIcon(icon_6c504bce02cd0686b848f5779dd78d72);
         
     
-        var popup_ed30da6c523298e606441ff39582c28b = L.popup({"maxWidth": "100%"});
+        var popup_687a99933c4758967736cc504d6a3158 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_635b41807568009b3443ed953354f6a4 = $(`<div id="html_635b41807568009b3443ed953354f6a4" style="width: 100.0%; height: 100.0%;"><p>Bedrooms: 3 Bed</p><p>Traveltime: n/a</p><p>Distance: 8.68202156617451</p><p>Bathrooms: 3 Bath</p><a href=" http://www.daft.ie/for-rent/apartment-turnberry-square-baldoyle-dublin-13/5926888 "target="_blank"> link </a></div>`)[0];
-                popup_ed30da6c523298e606441ff39582c28b.setContent(html_635b41807568009b3443ed953354f6a4);
+                var html_9696c6caba682862c7ac1bda0109318e = $(`<div id="html_9696c6caba682862c7ac1bda0109318e" style="width: 100.0%; height: 100.0%;"><p>Bedrooms: 3 Bed</p><p>Traveltime: n/a</p><p>Distance: 10.303812863937159</p><p>Bathrooms: 2 Bath</p><a href=" http://www.daft.ie/for-rent/apartment-kavanagh-hall-collegewood-castleknock-dublin-15/6061679 "target="_blank"> link </a></div>`)[0];
+                popup_687a99933c4758967736cc504d6a3158.setContent(html_9696c6caba682862c7ac1bda0109318e);
             
         
 
-        marker_6d17d14c481fe2424d75c5fefff751e9.bindPopup(popup_ed30da6c523298e606441ff39582c28b)
+        marker_ae1567b8094382589c52a6d0c52d27a9.bindPopup(popup_687a99933c4758967736cc504d6a3158)
         ;
 
         
     
     
-            marker_6d17d14c481fe2424d75c5fefff751e9.bindTooltip(
+            marker_ae1567b8094382589c52a6d0c52d27a9.bindTooltip(
                 `<div>
-                     2240
+                     2023
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_c18028a9b8e56ac5d27ac648fc0187ba = L.marker(
-                [53.399798, -6.214126],
+            var marker_ea3fa7a6f48c771efd2176a0e868f6ab = L.marker(
+                [53.372994551856, -6.3376621306886],
                 {}
-            ).addTo(map_5f6402abfa78536ce191607ed61c662a);
+            ).addTo(map_cd3e01ef5cc46499ee52dc804b27f71f);
         
     
-            var icon_f88da84364e1307d05bf53ab677c9cdc = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            var icon_5798431a385ceee3d88d27ee2397ffaa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
             );
-            marker_c18028a9b8e56ac5d27ac648fc0187ba.setIcon(icon_f88da84364e1307d05bf53ab677c9cdc);
+            marker_ea3fa7a6f48c771efd2176a0e868f6ab.setIcon(icon_5798431a385ceee3d88d27ee2397ffaa);
         
     
-        var popup_cba83731af86f61ddea3de8994d33265 = L.popup({"maxWidth": "100%"});
+        var popup_911c00845e2e89dfcad5f076ef63e49d = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_b4c0fcdd5247f1f0684f9eabc07c808e = $(`<div id="html_b4c0fcdd5247f1f0684f9eabc07c808e" style="width: 100.0%; height: 100.0%;"><p>Bedrooms: 3 Bed</p><p>Traveltime: n/a</p><p>Distance: 3.8554852748712594</p><p>Bathrooms: 1 Bath</p><a href=" http://www.daft.ie/for-rent/house-14-riverside-park-clonshaugh-clonshaugh-dublin-17/5970029 "target="_blank"> link </a></div>`)[0];
-                popup_cba83731af86f61ddea3de8994d33265.setContent(html_b4c0fcdd5247f1f0684f9eabc07c808e);
+                var html_4ca41c95eab8b14722fe84cb85639b9f = $(`<div id="html_4ca41c95eab8b14722fe84cb85639b9f" style="width: 100.0%; height: 100.0%;"><p>Bedrooms: 3 Bed</p><p>Traveltime: n/a</p><p>Distance: 8.585797284386599</p><p>Bathrooms: 2 Bath</p><a href=" http://www.daft.ie/for-rent/apartment-55-cloonlara-square-phoenix-park-racecourse-castleknock-dublin-15/5964677 "target="_blank"> link </a></div>`)[0];
+                popup_911c00845e2e89dfcad5f076ef63e49d.setContent(html_4ca41c95eab8b14722fe84cb85639b9f);
             
         
 
-        marker_c18028a9b8e56ac5d27ac648fc0187ba.bindPopup(popup_cba83731af86f61ddea3de8994d33265)
+        marker_ea3fa7a6f48c771efd2176a0e868f6ab.bindPopup(popup_911c00845e2e89dfcad5f076ef63e49d)
         ;
 
         
     
     
-            marker_c18028a9b8e56ac5d27ac648fc0187ba.bindTooltip(
+            marker_ea3fa7a6f48c771efd2176a0e868f6ab.bindTooltip(
+                `<div>
+                     2178
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_90cb063c0d1aebb0183021c9adc13a08 = L.marker(
+                [53.389676464858, -6.2356204821385],
+                {}
+            ).addTo(map_cd3e01ef5cc46499ee52dc804b27f71f);
+        
+    
+            var icon_762e6fe6424eb7de4c9a3edb7b24ccba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_90cb063c0d1aebb0183021c9adc13a08.setIcon(icon_762e6fe6424eb7de4c9a3edb7b24ccba);
+        
+    
+        var popup_23d8f06601e87f12d14b51fe9b6c6145 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8569fd9bddf55fe44cbee0fac4d68a4c = $(`<div id="html_8569fd9bddf55fe44cbee0fac4d68a4c" style="width: 100.0%; height: 100.0%;"><p>Bedrooms: 3 Bed</p><p>Traveltime: n/a</p><p>Distance: 4.362733346092201</p><p>Bathrooms: 2 Bath</p><a href=" http://www.daft.ie/for-rent/house-coolgariff-road-beaumont-dublin-9/6062166 "target="_blank"> link </a></div>`)[0];
+                popup_23d8f06601e87f12d14b51fe9b6c6145.setContent(html_8569fd9bddf55fe44cbee0fac4d68a4c);
+            
+        
+
+        marker_90cb063c0d1aebb0183021c9adc13a08.bindPopup(popup_23d8f06601e87f12d14b51fe9b6c6145)
+        ;
+
+        
+    
+    
+            marker_90cb063c0d1aebb0183021c9adc13a08.bindTooltip(
+                `<div>
+                     2200
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_782e9acb13b9c30375fc9e7281c50e08 = L.marker(
+                [53.404828, -6.299612],
+                {}
+            ).addTo(map_cd3e01ef5cc46499ee52dc804b27f71f);
+        
+    
+            var icon_f63b98e12e84ee62a4097a9ec3cca243 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_782e9acb13b9c30375fc9e7281c50e08.setIcon(icon_f63b98e12e84ee62a4097a9ec3cca243);
+        
+    
+        var popup_f8b3c940f3e7dc77f104726a9f99e25f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b191630d264d761203530c539bc06781 = $(`<div id="html_b191630d264d761203530c539bc06781" style="width: 100.0%; height: 100.0%;"><p>Bedrooms: 3 Bed</p><p>Traveltime: n/a</p><p>Distance: 4.340232534130099</p><p>Bathrooms: 3 Bath</p><a href=" http://www.daft.ie/for-rent/apartment-charlestown-park-dublin-11-finglas-dublin-11/6067566 "target="_blank"> link </a></div>`)[0];
+                popup_f8b3c940f3e7dc77f104726a9f99e25f.setContent(html_b191630d264d761203530c539bc06781);
+            
+        
+
+        marker_782e9acb13b9c30375fc9e7281c50e08.bindPopup(popup_f8b3c940f3e7dc77f104726a9f99e25f)
+        ;
+
+        
+    
+    
+            marker_782e9acb13b9c30375fc9e7281c50e08.bindTooltip(
+                `<div>
+                     2248
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3b9e098ce955991ddbe703ecd317f7e8 = L.marker(
+                [53.521891, -6.171027],
+                {}
+            ).addTo(map_cd3e01ef5cc46499ee52dc804b27f71f);
+        
+    
+            var icon_2756de748a4ad8cfda99e1866d2638f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3b9e098ce955991ddbe703ecd317f7e8.setIcon(icon_2756de748a4ad8cfda99e1866d2638f6);
+        
+    
+        var popup_36c278b5b1ab315e408f90814f61f6a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3117caee119840a848472203379a72c = $(`<div id="html_d3117caee119840a848472203379a72c" style="width: 100.0%; height: 100.0%;"><p>Bedrooms: 3 Bed</p><p>Traveltime: n/a</p><p>Distance: 11.566538885458545</p><p>Bathrooms: 2 Bath</p><a href=" http://www.daft.ie/for-rent/house-chapel-farm-terrace-lusk-co-dublin/6064843 "target="_blank"> link </a></div>`)[0];
+                popup_36c278b5b1ab315e408f90814f61f6a7.setContent(html_d3117caee119840a848472203379a72c);
+            
+        
+
+        marker_3b9e098ce955991ddbe703ecd317f7e8.bindPopup(popup_36c278b5b1ab315e408f90814f61f6a7)
+        ;
+
+        
+    
+    
+            marker_3b9e098ce955991ddbe703ecd317f7e8.bindTooltip(
+                `<div>
+                     2250
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3b21850e642709599cfa58847339fbb5 = L.marker(
+                [53.3326524, -6.3248064],
+                {}
+            ).addTo(map_cd3e01ef5cc46499ee52dc804b27f71f);
+        
+    
+            var icon_7002bf9d398ca0ede3ccca1c4ade804a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3b21850e642709599cfa58847339fbb5.setIcon(icon_7002bf9d398ca0ede3ccca1c4ade804a);
+        
+    
+        var popup_58a76ab9c17e942534dabf9400494f0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_223083ec3c91b9cc40d3714c757d8e72 = $(`<div id="html_223083ec3c91b9cc40d3714c757d8e72" style="width: 100.0%; height: 100.0%;"><p>Bedrooms: 3 Bed</p><p>Traveltime: n/a</p><p>Distance: 11.812724832732519</p><p>Bathrooms: 2 Bath</p><a href=" http://www.daft.ie/for-rent/house-kilworth-road-drimnagh-dublin-12/6061621 "target="_blank"> link </a></div>`)[0];
+                popup_58a76ab9c17e942534dabf9400494f0b.setContent(html_223083ec3c91b9cc40d3714c757d8e72);
+            
+        
+
+        marker_3b21850e642709599cfa58847339fbb5.bindPopup(popup_58a76ab9c17e942534dabf9400494f0b)
+        ;
+
+        
+    
+    
+            marker_3b21850e642709599cfa58847339fbb5.bindTooltip(
+                `<div>
+                     2285
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e49d6e1a4c4bf454c45588093bbb8b88 = L.marker(
+                [53.388377, -6.141613],
+                {}
+            ).addTo(map_cd3e01ef5cc46499ee52dc804b27f71f);
+        
+    
+            var icon_29388efab3a07b6b8211d25107e496cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e49d6e1a4c4bf454c45588093bbb8b88.setIcon(icon_29388efab3a07b6b8211d25107e496cb);
+        
+    
+        var popup_8b51b5b871e860324c00564d5d864335 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d196bdb8e870f1869e73872644be589 = $(`<div id="html_3d196bdb8e870f1869e73872644be589" style="width: 100.0%; height: 100.0%;"><p>Bedrooms: 3 Bed</p><p>Traveltime: n/a</p><p>Distance: 8.291553968978423</p><p>Bathrooms: 1 Bath</p><a href=" http://www.daft.ie/for-rent/house-6-bayside-crescent-sutton-bayside-dublin-13/6074435 "target="_blank"> link </a></div>`)[0];
+                popup_8b51b5b871e860324c00564d5d864335.setContent(html_3d196bdb8e870f1869e73872644be589);
+            
+        
+
+        marker_e49d6e1a4c4bf454c45588093bbb8b88.bindPopup(popup_8b51b5b871e860324c00564d5d864335)
+        ;
+
+        
+    
+    
+            marker_e49d6e1a4c4bf454c45588093bbb8b88.bindTooltip(
                 `<div>
                      2300
                  </div>`,
@@ -211,34 +432,34 @@
             );
         
     
-            var marker_ecc89817718fc538244477739e036926 = L.marker(
-                [53.515205, -6.317348],
+            var marker_70d26031b36feab4fb3ea0b259df5de6 = L.marker(
+                [53.35157, -6.255426],
                 {}
-            ).addTo(map_5f6402abfa78536ce191607ed61c662a);
+            ).addTo(map_cd3e01ef5cc46499ee52dc804b27f71f);
         
     
-            var icon_7a3a282f906560c1e0e9800e9d8443c1 = L.AwesomeMarkers.icon(
+            var icon_59a132b9d1e3099caff13355878d1ba4 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_ecc89817718fc538244477739e036926.setIcon(icon_7a3a282f906560c1e0e9800e9d8443c1);
+            marker_70d26031b36feab4fb3ea0b259df5de6.setIcon(icon_59a132b9d1e3099caff13355878d1ba4);
         
     
-        var popup_f2a8d404e8e9331f430e7818ce0f161a = L.popup({"maxWidth": "100%"});
+        var popup_c79475ea3604322a21299f0c010cab8c = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_4a1e5f1e64e2f8ee5ea566b5e59bc571 = $(`<div id="html_4a1e5f1e64e2f8ee5ea566b5e59bc571" style="width: 100.0%; height: 100.0%;"><p>Bedrooms: 3 Bed</p><p>Traveltime: n/a</p><p>Distance: 10.719583464186966</p><p>Bathrooms: 1 Bath</p><a href=" http://www.daft.ie/for-rent/apartment-eden-house-cabragh-oldtown-co-dublin/5909686 "target="_blank"> link </a></div>`)[0];
-                popup_f2a8d404e8e9331f430e7818ce0f161a.setContent(html_4a1e5f1e64e2f8ee5ea566b5e59bc571);
+                var html_094b011e1d5c5908763887f82a3ee77e = $(`<div id="html_094b011e1d5c5908763887f82a3ee77e" style="width: 100.0%; height: 100.0%;"><p>Bedrooms: 3 Bed</p><p>Traveltime: n/a</p><p>Distance: 8.54816890246555</p><p>Bathrooms: 1 Bath</p><a href=" http://www.daft.ie/for-rent/apartment-custom-hall-gardiner-street-lower-dublin-1/6071309 "target="_blank"> link </a></div>`)[0];
+                popup_c79475ea3604322a21299f0c010cab8c.setContent(html_094b011e1d5c5908763887f82a3ee77e);
             
         
 
-        marker_ecc89817718fc538244477739e036926.bindPopup(popup_f2a8d404e8e9331f430e7818ce0f161a)
+        marker_70d26031b36feab4fb3ea0b259df5de6.bindPopup(popup_c79475ea3604322a21299f0c010cab8c)
         ;
 
         
     
     
-            marker_ecc89817718fc538244477739e036926.bindTooltip(
+            marker_70d26031b36feab4fb3ea0b259df5de6.bindTooltip(
                 `<div>
                      2300
                  </div>`,
@@ -246,69 +467,69 @@
             );
         
     
-            var marker_17a4902ec1f7239c120d77d9d531fadc = L.marker(
-                [53.363536, -6.25316],
+            var marker_1a6a97d240bf76215da7e335d59f3382 = L.marker(
+                [53.3996105, -6.1468547],
                 {}
-            ).addTo(map_5f6402abfa78536ce191607ed61c662a);
+            ).addTo(map_cd3e01ef5cc46499ee52dc804b27f71f);
         
     
-            var icon_b0b26ca0d38c0d16d1db321237577181 = L.AwesomeMarkers.icon(
+            var icon_4b4920bc142503359a3191cabad2edb7 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
             );
-            marker_17a4902ec1f7239c120d77d9d531fadc.setIcon(icon_b0b26ca0d38c0d16d1db321237577181);
+            marker_1a6a97d240bf76215da7e335d59f3382.setIcon(icon_4b4920bc142503359a3191cabad2edb7);
         
     
-        var popup_c70e4332f4580826c55a66bf1fb44c95 = L.popup({"maxWidth": "100%"});
+        var popup_3f0642095ae7d1b09cf142162709e307 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_a4967b60238b70fd5400462b9528195e = $(`<div id="html_a4967b60238b70fd5400462b9528195e" style="width: 100.0%; height: 100.0%;"><p>Bedrooms: 3 Bed</p><p>Traveltime: n/a</p><p>Distance: 7.211066621237924</p><p>Bathrooms: 2 Bath</p><a href=" http://www.daft.ie/for-rent/house-holycross-avenue-dublin-3-drumcondra-dublin-3/5975159 "target="_blank"> link </a></div>`)[0];
-                popup_c70e4332f4580826c55a66bf1fb44c95.setContent(html_a4967b60238b70fd5400462b9528195e);
+                var html_6a69d859d3bd4c7b767c9a90df397be6 = $(`<div id="html_6a69d859d3bd4c7b767c9a90df397be6" style="width: 100.0%; height: 100.0%;"><p>Bedrooms: 3 Bed</p><p>Traveltime: n/a</p><p>Distance: 7.380011706217617</p><p>Bathrooms: 2 Bath</p><a href=" http://www.daft.ie/for-rent/apartment-sweetman-house-myrtle-the-coast-baldoyle-dublin-13/6061246 "target="_blank"> link </a></div>`)[0];
+                popup_3f0642095ae7d1b09cf142162709e307.setContent(html_6a69d859d3bd4c7b767c9a90df397be6);
             
         
 
-        marker_17a4902ec1f7239c120d77d9d531fadc.bindPopup(popup_c70e4332f4580826c55a66bf1fb44c95)
+        marker_1a6a97d240bf76215da7e335d59f3382.bindPopup(popup_3f0642095ae7d1b09cf142162709e307)
         ;
 
         
     
     
-            marker_17a4902ec1f7239c120d77d9d531fadc.bindTooltip(
+            marker_1a6a97d240bf76215da7e335d59f3382.bindTooltip(
                 `<div>
-                     2390
+                     2350
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_23ff731e0f0fe1e4d17c005a1e0e2b6c = L.marker(
-                [53.341387, -6.274637],
+            var marker_2dfd65125db9112bde33611ebbee446e = L.marker(
+                [53.3382773, -6.2929234],
                 {}
-            ).addTo(map_5f6402abfa78536ce191607ed61c662a);
+            ).addTo(map_cd3e01ef5cc46499ee52dc804b27f71f);
         
     
-            var icon_926f24163e7b5a11920e0da923c6a24c = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            var icon_5b4000e58b2424ca236554d707041ae5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
             );
-            marker_23ff731e0f0fe1e4d17c005a1e0e2b6c.setIcon(icon_926f24163e7b5a11920e0da923c6a24c);
+            marker_2dfd65125db9112bde33611ebbee446e.setIcon(icon_5b4000e58b2424ca236554d707041ae5);
         
     
-        var popup_c8bd9a6cb8e2c90d56a9638b87d49438 = L.popup({"maxWidth": "100%"});
+        var popup_7265befa51bd088f602e544ffa381fba = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_6917e480b248bad5f8f651ba7cfc86f6 = $(`<div id="html_6917e480b248bad5f8f651ba7cfc86f6" style="width: 100.0%; height: 100.0%;"><p>Bedrooms: 3 Bed</p><p>Traveltime: n/a</p><p>Distance: 9.832281152435675</p><p>Bathrooms: 1 Bath</p><a href=" http://www.daft.ie/for-rent/apartment--francis-street-christchurch-dublin-8/5973898 "target="_blank"> link </a></div>`)[0];
-                popup_c8bd9a6cb8e2c90d56a9638b87d49438.setContent(html_6917e480b248bad5f8f651ba7cfc86f6);
+                var html_e8e241f6ccea6479cb242a7960ecb418 = $(`<div id="html_e8e241f6ccea6479cb242a7960ecb418" style="width: 100.0%; height: 100.0%;"><p>Bedrooms: 3 Bed</p><p>Traveltime: n/a</p><p>Distance: 10.457024469241544</p><p>Bathrooms: 2 Bath</p><a href=" http://www.daft.ie/for-rent/apartment-st-james-walk-rialto-dublin-8/6063211 "target="_blank"> link </a></div>`)[0];
+                popup_7265befa51bd088f602e544ffa381fba.setContent(html_e8e241f6ccea6479cb242a7960ecb418);
             
         
 
-        marker_23ff731e0f0fe1e4d17c005a1e0e2b6c.bindPopup(popup_c8bd9a6cb8e2c90d56a9638b87d49438)
+        marker_2dfd65125db9112bde33611ebbee446e.bindPopup(popup_7265befa51bd088f602e544ffa381fba)
         ;
 
         
     
     
-            marker_23ff731e0f0fe1e4d17c005a1e0e2b6c.bindTooltip(
+            marker_2dfd65125db9112bde33611ebbee446e.bindTooltip(
                 `<div>
                      2400
                  </div>`,
@@ -316,112 +537,252 @@
             );
         
     
-            var marker_18291e5e7d30cc31dafcb1a0279a2f5e = L.marker(
-                [53.387113, -6.158517],
+            var marker_d18b034851fe5f19d7910c5102b8304d = L.marker(
+                [53.3272797, -6.3031965],
                 {}
-            ).addTo(map_5f6402abfa78536ce191607ed61c662a);
+            ).addTo(map_cd3e01ef5cc46499ee52dc804b27f71f);
         
     
-            var icon_1b8128a9fdda02101da2ababf0e17dad = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            var icon_f818918bf4897e6c5fdfec65d028e045 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
             );
-            marker_18291e5e7d30cc31dafcb1a0279a2f5e.setIcon(icon_1b8128a9fdda02101da2ababf0e17dad);
+            marker_d18b034851fe5f19d7910c5102b8304d.setIcon(icon_f818918bf4897e6c5fdfec65d028e045);
         
     
-        var popup_ebef43e5dce811b50388427c0d2a4192 = L.popup({"maxWidth": "100%"});
+        var popup_98d2bc303acd3c13b1f2b4d65c8457b7 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_0770a691876fb4617a380fd39c2a56d7 = $(`<div id="html_0770a691876fb4617a380fd39c2a56d7" style="width: 100.0%; height: 100.0%;"><p>Bedrooms: 3 Bed</p><p>Traveltime: n/a</p><p>Distance: 7.455127584018403</p><p>Bathrooms: 2 Bath</p><a href=" http://www.daft.ie/for-rent/house-11-briarfield-villas-kilbarrack-dublin-5/5970345 "target="_blank"> link </a></div>`)[0];
-                popup_ebef43e5dce811b50388427c0d2a4192.setContent(html_0770a691876fb4617a380fd39c2a56d7);
+                var html_39b632e44b3b9e4909fe45ff2a75e975 = $(`<div id="html_39b632e44b3b9e4909fe45ff2a75e975" style="width: 100.0%; height: 100.0%;"><p>Bedrooms: 3 Bed</p><p>Traveltime: n/a</p><p>Distance: 11.828702996547529</p><p>Bathrooms: 1 Bath</p><a href=" http://www.daft.ie/for-rent/house-old-county-road-crumlin-dublin-12/6047367 "target="_blank"> link </a></div>`)[0];
+                popup_98d2bc303acd3c13b1f2b4d65c8457b7.setContent(html_39b632e44b3b9e4909fe45ff2a75e975);
             
         
 
-        marker_18291e5e7d30cc31dafcb1a0279a2f5e.bindPopup(popup_ebef43e5dce811b50388427c0d2a4192)
+        marker_d18b034851fe5f19d7910c5102b8304d.bindPopup(popup_98d2bc303acd3c13b1f2b4d65c8457b7)
         ;
 
         
     
     
-            marker_18291e5e7d30cc31dafcb1a0279a2f5e.bindTooltip(
+            marker_d18b034851fe5f19d7910c5102b8304d.bindTooltip(
                 `<div>
-                     2407
+                     2400
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_73dea2ca341546bddf868ee4aa485020 = L.marker(
-                [53.327056, -6.273556],
+            var marker_5f70acd392a2d047a1a3dce0197c68f1 = L.marker(
+                [53.3883791, -6.2576962],
                 {}
-            ).addTo(map_5f6402abfa78536ce191607ed61c662a);
+            ).addTo(map_cd3e01ef5cc46499ee52dc804b27f71f);
         
     
-            var icon_bc4c3c7febcdec9a0b8022c6659a6be4 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            var icon_5b343bba0d0d5c6736209e4144be5bc2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_73dea2ca341546bddf868ee4aa485020.setIcon(icon_bc4c3c7febcdec9a0b8022c6659a6be4);
+            marker_5f70acd392a2d047a1a3dce0197c68f1.setIcon(icon_5b343bba0d0d5c6736209e4144be5bc2);
         
     
-        var popup_ba8754cfef3cac8e9a477283c4bf3e3b = L.popup({"maxWidth": "100%"});
+        var popup_1c8d1d17a0ee5ce016161d1ac453f419 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_ce1dfe3fabf16a4909921f937638cf21 = $(`<div id="html_ce1dfe3fabf16a4909921f937638cf21" style="width: 100.0%; height: 100.0%;"><p>Bedrooms: 3 Bed</p><p>Traveltime: n/a</p><p>Distance: 11.39108856854888</p><p>Bathrooms: 1 Bath</p><a href=" http://www.daft.ie/for-rent/house-37-fitzgerald-street-harolds-cross-harolds-cross-dublin-6/5969227 "target="_blank"> link </a></div>`)[0];
-                popup_ba8754cfef3cac8e9a477283c4bf3e3b.setContent(html_ce1dfe3fabf16a4909921f937638cf21);
+                var html_a031b48af04692482483d6cbe4969d82 = $(`<div id="html_a031b48af04692482483d6cbe4969d82" style="width: 100.0%; height: 100.0%;"><p>Bedrooms: 3 Bed</p><p>Traveltime: n/a</p><p>Distance: 4.491512649037007</p><p>Bathrooms: 1 Bath</p><a href=" http://www.daft.ie/for-rent/house-shanowen-avenue-santry-dublin-9/6075566 "target="_blank"> link </a></div>`)[0];
+                popup_1c8d1d17a0ee5ce016161d1ac453f419.setContent(html_a031b48af04692482483d6cbe4969d82);
             
         
 
-        marker_73dea2ca341546bddf868ee4aa485020.bindPopup(popup_ba8754cfef3cac8e9a477283c4bf3e3b)
+        marker_5f70acd392a2d047a1a3dce0197c68f1.bindPopup(popup_1c8d1d17a0ee5ce016161d1ac453f419)
         ;
 
         
     
     
-            marker_73dea2ca341546bddf868ee4aa485020.bindTooltip(
+            marker_5f70acd392a2d047a1a3dce0197c68f1.bindTooltip(
                 `<div>
-                     2593
+                     2500
                  </div>`,
                 {"sticky": true}
             );
         
     
-    var color_map_61f1e920d1257433ecd358c6a4840559 = {};
+            var marker_55cf2f13c2b342fb6c95187aecf8afc4 = L.marker(
+                [53.388127, -6.233791],
+                {}
+            ).addTo(map_cd3e01ef5cc46499ee52dc804b27f71f);
+        
+    
+            var icon_908b2b9e3400e3340e847087cce142e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_55cf2f13c2b342fb6c95187aecf8afc4.setIcon(icon_908b2b9e3400e3340e847087cce142e5);
+        
+    
+        var popup_c5db3394069462e85847b0c17a0fca9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f541ffba8f3be3abb3e8c7ce21fad756 = $(`<div id="html_f541ffba8f3be3abb3e8c7ce21fad756" style="width: 100.0%; height: 100.0%;"><p>Bedrooms: 3 Bed</p><p>Traveltime: n/a</p><p>Distance: 4.554644192820249</p><p>Bathrooms: 1 Bath</p><a href=" http://www.daft.ie/for-rent/house-34-coolatree-park-beaumont-beaumont-dublin-9/6065761 "target="_blank"> link </a></div>`)[0];
+                popup_c5db3394069462e85847b0c17a0fca9c.setContent(html_f541ffba8f3be3abb3e8c7ce21fad756);
+            
+        
+
+        marker_55cf2f13c2b342fb6c95187aecf8afc4.bindPopup(popup_c5db3394069462e85847b0c17a0fca9c)
+        ;
+
+        
+    
+    
+            marker_55cf2f13c2b342fb6c95187aecf8afc4.bindTooltip(
+                `<div>
+                     2500
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d21a9ba79ff52a2cb22a4ff2abdc58d = L.marker(
+                [53.4855717, -6.1435873],
+                {}
+            ).addTo(map_cd3e01ef5cc46499ee52dc804b27f71f);
+        
+    
+            var icon_82af6e26946b4d8284c055ed5fc0aa26 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4d21a9ba79ff52a2cb22a4ff2abdc58d.setIcon(icon_82af6e26946b4d8284c055ed5fc0aa26);
+        
+    
+        var popup_4897104a77d5e514d4014c32c6f16cdb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9b2b449a69e9690a1b36a8119f78da0 = $(`<div id="html_f9b2b449a69e9690a1b36a8119f78da0" style="width: 100.0%; height: 100.0%;"><p>Bedrooms: 3 Bed</p><p>Traveltime: n/a</p><p>Distance: 9.364566302993989</p><p>Bathrooms: 2 Bath</p><a href=" http://www.daft.ie/for-rent/house-7-the-dale-balmoston-donabate-co-dublin/6059314 "target="_blank"> link </a></div>`)[0];
+                popup_4897104a77d5e514d4014c32c6f16cdb.setContent(html_f9b2b449a69e9690a1b36a8119f78da0);
+            
+        
+
+        marker_4d21a9ba79ff52a2cb22a4ff2abdc58d.bindPopup(popup_4897104a77d5e514d4014c32c6f16cdb)
+        ;
+
+        
+    
+    
+            marker_4d21a9ba79ff52a2cb22a4ff2abdc58d.bindTooltip(
+                `<div>
+                     2500
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6886f1c31e847ee3caaa28f841a9072f = L.marker(
+                [53.338792, -6.304682],
+                {}
+            ).addTo(map_cd3e01ef5cc46499ee52dc804b27f71f);
+        
+    
+            var icon_972d6a89abfa7ab4f354bec9d8d14552 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6886f1c31e847ee3caaa28f841a9072f.setIcon(icon_972d6a89abfa7ab4f354bec9d8d14552);
+        
+    
+        var popup_8347107e0a377f6b5d2a4a971244e5a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3130c2a267d4f006c8eb028ccd6c1a41 = $(`<div id="html_3130c2a267d4f006c8eb028ccd6c1a41" style="width: 100.0%; height: 100.0%;"><p>Bedrooms: 3 Bed</p><p>Traveltime: n/a</p><p>Distance: 10.655385957178664</p><p>Bathrooms: 2 Bath</p><a href=" http://www.daft.ie/for-rent/apartment-hybreasal-house-south-circular-road-kilmainham-dublin-8/6034697 "target="_blank"> link </a></div>`)[0];
+                popup_8347107e0a377f6b5d2a4a971244e5a8.setContent(html_3130c2a267d4f006c8eb028ccd6c1a41);
+            
+        
+
+        marker_6886f1c31e847ee3caaa28f841a9072f.bindPopup(popup_8347107e0a377f6b5d2a4a971244e5a8)
+        ;
+
+        
+    
+    
+            marker_6886f1c31e847ee3caaa28f841a9072f.bindTooltip(
+                `<div>
+                     2500
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_568c8f41845d1d8b5f46bdf779207088 = L.marker(
+                [53.351323409568, -6.2550734282736],
+                {}
+            ).addTo(map_cd3e01ef5cc46499ee52dc804b27f71f);
+        
+    
+            var icon_a38a2731b6d56876976677556358b2d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_568c8f41845d1d8b5f46bdf779207088.setIcon(icon_a38a2731b6d56876976677556358b2d8);
+        
+    
+        var popup_e53ddc7e7d62567f7fdad3d77e7f10b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aec1826bbb4f6841b10ccac8c318fa4c = $(`<div id="html_aec1826bbb4f6841b10ccac8c318fa4c" style="width: 100.0%; height: 100.0%;"><p>Bedrooms: 3 Bed</p><p>Traveltime: n/a</p><p>Distance: 8.57409186086293</p><p>Bathrooms: 1 Bath</p><a href=" http://www.daft.ie/for-rent/apartment-custom-hall-lower-gardiner-street-dublin-1/6040833 "target="_blank"> link </a></div>`)[0];
+                popup_e53ddc7e7d62567f7fdad3d77e7f10b6.setContent(html_aec1826bbb4f6841b10ccac8c318fa4c);
+            
+        
+
+        marker_568c8f41845d1d8b5f46bdf779207088.bindPopup(popup_e53ddc7e7d62567f7fdad3d77e7f10b6)
+        ;
+
+        
+    
+    
+            marker_568c8f41845d1d8b5f46bdf779207088.bindTooltip(
+                `<div>
+                     2533
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+    var color_map_bed042ce48fded01678dbeafd6500848 = {};
 
     
-    color_map_61f1e920d1257433ecd358c6a4840559.color = d3.scale.threshold()
-              .domain([2103.88, 2104.8602004008017, 2105.840400801603, 2106.8206012024048, 2107.8008016032063, 2108.7810020040083, 2109.76120240481, 2110.7414028056114, 2111.721603206413, 2112.7018036072145, 2113.682004008016, 2114.6622044088176, 2115.642404809619, 2116.622605210421, 2117.6028056112227, 2118.5830060120243, 2119.563206412826, 2120.5434068136274, 2121.523607214429, 2122.5038076152305, 2123.484008016032, 2124.4642084168336, 2125.4444088176356, 2126.424609218437, 2127.4048096192387, 2128.38501002004, 2129.365210420842, 2130.3454108216433, 2131.325611222445, 2132.3058116232464, 2133.286012024048, 2134.26621242485, 2135.2464128256515, 2136.226613226453, 2137.2068136272546, 2138.187014028056, 2139.1672144288577, 2140.1474148296593, 2141.127615230461, 2142.107815631263, 2143.0880160320644, 2144.068216432866, 2145.0484168336675, 2146.028617234469, 2147.0088176352706, 2147.989018036072, 2148.9692184368737, 2149.9494188376752, 2150.9296192384772, 2151.909819639279, 2152.8900200400803, 2153.870220440882, 2154.8504208416834, 2155.830621242485, 2156.8108216432865, 2157.791022044088, 2158.77122244489, 2159.7514228456916, 2160.731623246493, 2161.7118236472948, 2162.6920240480963, 2163.672224448898, 2164.6524248496994, 2165.632625250501, 2166.6128256513025, 2167.5930260521045, 2168.573226452906, 2169.5534268537076, 2170.533627254509, 2171.5138276553107, 2172.4940280561123, 2173.474228456914, 2174.4544288577154, 2175.434629258517, 2176.414829659319, 2177.3950300601205, 2178.375230460922, 2179.3554308617236, 2180.335631262525, 2181.3158316633267, 2182.296032064128, 2183.2762324649298, 2184.2564328657318, 2185.2366332665333, 2186.216833667335, 2187.1970340681364, 2188.177234468938, 2189.1574348697395, 2190.137635270541, 2191.1178356713426, 2192.098036072144, 2193.078236472946, 2194.0584368737477, 2195.0386372745493, 2196.018837675351, 2196.9990380761524, 2197.979238476954, 2198.9594388777555, 2199.939639278557, 2200.919839679359, 2201.9000400801606, 2202.880240480962, 2203.8604408817637, 2204.8406412825652, 2205.820841683367, 2206.8010420841683, 2207.78124248497, 2208.7614428857714, 2209.7416432865734, 2210.721843687375, 2211.7020440881765, 2212.682244488978, 2213.6624448897796, 2214.642645290581, 2215.6228456913827, 2216.6030460921843, 2217.583246492986, 2218.563446893788, 2219.5436472945894, 2220.523847695391, 2221.5040480961925, 2222.484248496994, 2223.4644488977956, 2224.444649298597, 2225.4248496993987, 2226.4050501002007, 2227.3852505010022, 2228.365450901804, 2229.3456513026053, 2230.325851703407, 2231.3060521042084, 2232.28625250501, 2233.2664529058115, 2234.246653306613, 2235.226853707415, 2236.2070541082167, 2237.187254509018, 2238.1674549098198, 2239.1476553106213, 2240.127855711423, 2241.1080561122244, 2242.088256513026, 2243.0684569138275, 2244.0486573146295, 2245.028857715431, 2246.0090581162326, 2246.989258517034, 2247.9694589178357, 2248.9496593186373, 2249.929859719439, 2250.9100601202404, 2251.8902605210424, 2252.870460921844, 2253.8506613226455, 2254.830861723447, 2255.8110621242486, 2256.79126252505, 2257.7714629258517, 2258.751663326653, 2259.7318637274548, 2260.7120641282568, 2261.6922645290583, 2262.67246492986, 2263.6526653306614, 2264.632865731463, 2265.6130661322645, 2266.593266533066, 2267.5734669338676, 2268.5536673346696, 2269.533867735471, 2270.5140681362727, 2271.4942685370743, 2272.474468937876, 2273.4546693386774, 2274.434869739479, 2275.4150701402805, 2276.395270541082, 2277.375470941884, 2278.3556713426856, 2279.335871743487, 2280.3160721442887, 2281.2962725450902, 2282.276472945892, 2283.2566733466933, 2284.236873747495, 2285.217074148297, 2286.1972745490984, 2287.1774749499, 2288.1576753507015, 2289.137875751503, 2290.1180761523046, 2291.098276553106, 2292.0784769539077, 2293.0586773547093, 2294.0388777555113, 2295.019078156313, 2295.9992785571144, 2296.979478957916, 2297.9596793587175, 2298.939879759519, 2299.9200801603206, 2300.900280561122, 2301.880480961924, 2302.8606813627257, 2303.8408817635272, 2304.821082164329, 2305.8012825651304, 2306.781482965932, 2307.7616833667335, 2308.741883767535, 2309.7220841683366, 2310.702284569138, 2311.68248496994, 2312.6626853707417, 2313.642885771543, 2314.6230861723448, 2315.6032865731463, 2316.583486973948, 2317.5636873747494, 2318.543887775551, 2319.524088176353, 2320.5042885771545, 2321.484488977956, 2322.4646893787576, 2323.444889779559, 2324.4250901803607, 2325.4052905811623, 2326.385490981964, 2327.3656913827654, 2328.3458917835674, 2329.326092184369, 2330.3062925851705, 2331.286492985972, 2332.2666933867736, 2333.246893787575, 2334.2270941883767, 2335.207294589178, 2336.18749498998, 2337.167695390782, 2338.1478957915833, 2339.128096192385, 2340.1082965931864, 2341.088496993988, 2342.0686973947895, 2343.048897795591, 2344.0290981963926, 2345.0092985971946, 2345.989498997996, 2346.9696993987977, 2347.9498997995993, 2348.930100200401, 2349.9103006012024, 2350.890501002004, 2351.8707014028055, 2352.8509018036075, 2353.831102204409, 2354.8113026052106, 2355.791503006012, 2356.7717034068137, 2357.7519038076152, 2358.732104208417, 2359.7123046092183, 2360.69250501002, 2361.6727054108214, 2362.6529058116234, 2363.633106212425, 2364.6133066132265, 2365.593507014028, 2366.5737074148296, 2367.553907815631, 2368.5341082164327, 2369.5143086172347, 2370.4945090180363, 2371.474709418838, 2372.4549098196394, 2373.435110220441, 2374.4153106212425, 2375.395511022044, 2376.3757114228456, 2377.355911823647, 2378.336112224449, 2379.3163126252507, 2380.2965130260523, 2381.276713426854, 2382.2569138276554, 2383.237114228457, 2384.2173146292585, 2385.19751503006, 2386.177715430862, 2387.1579158316636, 2388.138116232465, 2389.1183166332667, 2390.098517034068, 2391.0787174348698, 2392.0589178356713, 2393.039118236473, 2394.0193186372744, 2394.999519038076, 2395.979719438878, 2396.9599198396795, 2397.940120240481, 2398.9203206412826, 2399.900521042084, 2400.8807214428857, 2401.8609218436873, 2402.8411222444893, 2403.821322645291, 2404.8015230460924, 2405.781723446894, 2406.7619238476955, 2407.742124248497, 2408.7223246492986, 2409.7025250501, 2410.6827254509017, 2411.662925851703, 2412.643126252505, 2413.623326653307, 2414.6035270541083, 2415.58372745491, 2416.5639278557114, 2417.544128256513, 2418.5243286573145, 2419.504529058116, 2420.484729458918, 2421.4649298597196, 2422.445130260521, 2423.4253306613227, 2424.4055310621243, 2425.385731462926, 2426.3659318637274, 2427.346132264529, 2428.3263326653305, 2429.3065330661325, 2430.286733466934, 2431.2669338677356, 2432.247134268537, 2433.2273346693387, 2434.2075350701402, 2435.187735470942, 2436.1679358717433, 2437.1481362725453, 2438.128336673347, 2439.1085370741484, 2440.08873747495, 2441.0689378757515, 2442.049138276553, 2443.0293386773546, 2444.009539078156, 2444.9897394789577, 2445.9699398797597, 2446.9501402805613, 2447.930340681363, 2448.9105410821644, 2449.890741482966, 2450.8709418837675, 2451.851142284569, 2452.8313426853706, 2453.8115430861726, 2454.791743486974, 2455.7719438877757, 2456.7521442885773, 2457.732344689379, 2458.7125450901804, 2459.692745490982, 2460.6729458917835, 2461.653146292585, 2462.6333466933866, 2463.6135470941886, 2464.59374749499, 2465.5739478957917, 2466.554148296593, 2467.5343486973948, 2468.5145490981963, 2469.494749498998, 2470.4749498997994, 2471.4551503006014, 2472.435350701403, 2473.4155511022045, 2474.395751503006, 2475.3759519038076, 2476.356152304609, 2477.3363527054107, 2478.3165531062123, 2479.296753507014, 2480.276953907816, 2481.2571543086174, 2482.237354709419, 2483.2175551102205, 2484.197755511022, 2485.1779559118236, 2486.158156312625, 2487.1383567134267, 2488.1185571142287, 2489.0987575150302, 2490.078957915832, 2491.0591583166333, 2492.039358717435, 2493.0195591182364, 2493.999759519038, 2494.9799599198395, 2495.960160320641, 2496.940360721443, 2497.9205611222446, 2498.900761523046, 2499.8809619238477, 2500.8611623246493, 2501.841362725451, 2502.8215631262524, 2503.8017635270544, 2504.781963927856, 2505.7621643286575, 2506.742364729459, 2507.7225651302606, 2508.702765531062, 2509.6829659318637, 2510.6631663326652, 2511.643366733467, 2512.6235671342683, 2513.60376753507, 2514.583967935872, 2515.5641683366734, 2516.544368737475, 2517.5245691382765, 2518.504769539078, 2519.4849699398796, 2520.465170340681, 2521.445370741483, 2522.4255711422848, 2523.4057715430863, 2524.385971943888, 2525.3661723446894, 2526.346372745491, 2527.3265731462925, 2528.306773547094, 2529.2869739478956, 2530.2671743486976, 2531.247374749499, 2532.2275751503007, 2533.2077755511023, 2534.187975951904, 2535.1681763527054, 2536.148376753507, 2537.1285771543085, 2538.1087775551105, 2539.088977955912, 2540.0691783567136, 2541.049378757515, 2542.0295791583167, 2543.009779559118, 2543.9899799599198, 2544.9701803607213, 2545.950380761523, 2546.930581162325, 2547.9107815631264, 2548.890981963928, 2549.8711823647295, 2550.851382765531, 2551.8315831663326, 2552.811783567134, 2553.7919839679357, 2554.7721843687377, 2555.7523847695393, 2556.732585170341, 2557.7127855711424, 2558.692985971944, 2559.6731863727455, 2560.653386773547, 2561.6335871743486, 2562.61378757515, 2563.5939879759517, 2564.5741883767537, 2565.5543887775552, 2566.534589178357, 2567.5147895791583, 2568.49498997996, 2569.4751903807614, 2570.455390781563, 2571.435591182365, 2572.4157915831665, 2573.395991983968, 2574.3761923847696, 2575.356392785571, 2576.3365931863727, 2577.3167935871743, 2578.296993987976, 2579.2771943887774, 2580.257394789579, 2581.237595190381, 2582.2177955911825, 2583.197995991984, 2584.1781963927856, 2585.158396793587, 2586.1385971943887, 2587.1187975951902, 2588.098997995992, 2589.079198396794, 2590.0593987975953, 2591.039599198397, 2592.0197995991984, 2593.0])
-              .range(['#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff']);
+    color_map_bed042ce48fded01678dbeafd6500848.color = d3.scale.threshold()
+              .domain([1751.32, 1752.886492985972, 1754.452985971944, 1756.0194789579157, 1757.5859719438877, 1759.1524649298597, 1760.7189579158317, 1762.2854509018036, 1763.8519438877754, 1765.4184368737474, 1766.9849298597194, 1768.5514228456914, 1770.1179158316634, 1771.6844088176351, 1773.2509018036071, 1774.817394789579, 1776.383887775551, 1777.950380761523, 1779.5168737474949, 1781.0833667334668, 1782.6498597194388, 1784.2163527054108, 1785.7828456913826, 1787.3493386773546, 1788.9158316633266, 1790.4823246492986, 1792.0488176352706, 1793.6153106212423, 1795.1818036072143, 1796.7482965931863, 1798.3147895791583, 1799.8812825651303, 1801.447775551102, 1803.014268537074, 1804.580761523046, 1806.147254509018, 1807.71374749499, 1809.2802404809618, 1810.8467334669338, 1812.4132264529057, 1813.9797194388777, 1815.5462124248497, 1817.1127054108215, 1818.6791983967935, 1820.2456913827655, 1821.8121843687375, 1823.3786773547095, 1824.9451703406812, 1826.5116633266532, 1828.0781563126252, 1829.6446492985972, 1831.2111422845692, 1832.777635270541, 1834.344128256513, 1835.910621242485, 1837.477114228457, 1839.043607214429, 1840.6101002004007, 1842.1765931863727, 1843.7430861723446, 1845.3095791583166, 1846.8760721442886, 1848.4425651302604, 1850.0090581162324, 1851.5755511022044, 1853.1420440881764, 1854.7085370741484, 1856.2750300601201, 1857.841523046092, 1859.408016032064, 1860.974509018036, 1862.541002004008, 1864.1074949899798, 1865.6739879759518, 1867.2404809619238, 1868.8069739478958, 1870.3734669338678, 1871.9399599198396, 1873.5064529058116, 1875.0729458917835, 1876.6394388777555, 1878.2059318637273, 1879.7724248496993, 1881.3389178356713, 1882.9054108216433, 1884.4719038076153, 1886.0383967935873, 1887.604889779559, 1889.171382765531, 1890.737875751503, 1892.304368737475, 1893.8708617234468, 1895.4373547094187, 1897.0038476953907, 1898.5703406813627, 1900.1368336673347, 1901.7033266533065, 1903.2698196392785, 1904.8363126252505, 1906.4028056112224, 1907.9692985971942, 1909.5357915831662, 1911.1022845691382, 1912.6687775551102, 1914.2352705410822, 1915.801763527054, 1917.368256513026, 1918.934749498998, 1920.50124248497, 1922.067735470942, 1923.6342284569137, 1925.2007214428857, 1926.7672144288576, 1928.3337074148296, 1929.9002004008016, 1931.4666933867734, 1933.0331863727454, 1934.5996793587174, 1936.1661723446894, 1937.7326653306613, 1939.299158316633, 1940.865651302605, 1942.432144288577, 1943.998637274549, 1945.565130260521, 1947.1316232464928, 1948.6981162324648, 1950.2646092184368, 1951.8311022044088, 1953.3975951903808, 1954.9640881763526, 1956.5305811623246, 1958.0970741482965, 1959.6635671342685, 1961.2300601202405, 1962.7965531062123, 1964.3630460921843, 1965.9295390781563, 1967.4960320641283, 1969.0625250501002, 1970.629018036072, 1972.195511022044, 1973.762004008016, 1975.328496993988, 1976.89498997996, 1978.4614829659317, 1980.0279759519037, 1981.5944689378757, 1983.1609619238477, 1984.7274549098197, 1986.2939478957915, 1987.8604408817635, 1989.4269338677354, 1990.9934268537074, 1992.5599198396794, 1994.1264128256512, 1995.6929058116232, 1997.2593987975952, 1998.8258917835672, 2000.3923847695391, 2001.958877755511, 2003.525370741483, 2005.091863727455, 2006.6583567134269, 2008.2248496993989, 2009.7913426853706, 2011.3578356713426, 2012.9243286573146, 2014.4908216432866, 2016.0573146292586, 2017.6238076152304, 2019.1903006012024, 2020.7567935871743, 2022.3232865731463, 2023.8897795591183, 2025.45627254509, 2027.022765531062, 2028.589258517034, 2030.1557515030058, 2031.7222444889778, 2033.2887374749498, 2034.8552304609218, 2036.4217234468938, 2037.9882164328656, 2039.5547094188378, 2041.1212024048095, 2042.6876953907815, 2044.2541883767535, 2045.8206813627255, 2047.3871743486975, 2048.9536673346693, 2050.5201603206415, 2052.0866533066132, 2053.653146292585, 2055.219639278557, 2056.786132264529, 2058.3526252505008, 2059.919118236473, 2061.4856112224447, 2063.052104208417, 2064.6185971943887, 2066.185090180361, 2067.7515831663327, 2069.3180761523045, 2070.8845691382767, 2072.4510621242484, 2074.01755511022, 2075.5840480961924, 2077.150541082164, 2078.7170340681364, 2080.283527054108, 2081.85002004008, 2083.416513026052, 2084.983006012024, 2086.549498997996, 2088.115991983968, 2089.6824849699397, 2091.248977955912, 2092.8154709418836, 2094.381963927856, 2095.9484569138276, 2097.5149498998, 2099.0814428857716, 2100.6479358717434, 2102.2144288577156, 2103.7809218436873, 2105.347414829659, 2106.9139078156313, 2108.480400801603, 2110.046893787575, 2111.613386773547, 2113.179879759519, 2114.746372745491, 2116.312865731463, 2117.879358717435, 2119.445851703407, 2121.0123446893786, 2122.5788376753508, 2124.1453306613225, 2125.7118236472948, 2127.2783166332665, 2128.8448096192383, 2130.4113026052105, 2131.9777955911823, 2133.5442885771545, 2135.1107815631262, 2136.677274549098, 2138.24376753507, 2139.810260521042, 2141.3767535070137, 2142.943246492986, 2144.5097394789577, 2146.07623246493, 2147.6427254509017, 2149.209218436874, 2150.7757114228457, 2152.3422044088175, 2153.9086973947897, 2155.4751903807614, 2157.0416833667337, 2158.6081763527054, 2160.174669338677, 2161.7411623246494, 2163.307655310621, 2164.8741482965934, 2166.440641282565, 2168.007134268537, 2169.573627254509, 2171.140120240481, 2172.7066132264526, 2174.273106212425, 2175.8395991983966, 2177.406092184369, 2178.9725851703406, 2180.539078156313, 2182.1055711422846, 2183.6720641282564, 2185.2385571142286, 2186.8050501002003, 2188.371543086172, 2189.9380360721443, 2191.504529058116, 2193.0710220440883, 2194.63751503006, 2196.2040080160323, 2197.770501002004, 2199.336993987976, 2200.903486973948, 2202.46997995992, 2204.0364729458915, 2205.6029659318638, 2207.1694589178355, 2208.7359519038077, 2210.3024448897795, 2211.8689378757513, 2213.4354308617235, 2215.0019238476953, 2216.5684168336675, 2218.1349098196392, 2219.701402805611, 2221.267895791583, 2222.834388777555, 2224.400881763527, 2225.967374749499, 2227.533867735471, 2229.100360721443, 2230.6668537074147, 2232.233346693387, 2233.7998396793587, 2235.3663326653304, 2236.9328256513027, 2238.4993186372744, 2240.0658116232466, 2241.6323046092184, 2243.19879759519, 2244.7652905811624, 2246.331783567134, 2247.8982765531064, 2249.464769539078, 2251.03126252505, 2252.597755511022, 2254.164248496994, 2255.730741482966, 2257.297234468938, 2258.8637274549096, 2260.430220440882, 2261.9967134268536, 2263.563206412826, 2265.1296993987976, 2266.6961923847693, 2268.2626853707416, 2269.8291783567133, 2271.395671342685, 2272.9621643286573, 2274.5286573146295, 2276.0951503006013, 2277.661643286573, 2279.2281362725453, 2280.794629258517, 2282.361122244489, 2283.927615230461, 2285.494108216433, 2287.0606012024045, 2288.6270941883768, 2290.193587174349, 2291.7600801603207, 2293.3265731462925, 2294.8930661322647, 2296.4595591182365, 2298.0260521042082, 2299.5925450901805, 2301.1590380761522, 2302.725531062124, 2304.292024048096, 2305.858517034068, 2307.42501002004, 2308.991503006012, 2310.557995991984, 2312.124488977956, 2313.6909819639277, 2315.2574749499, 2316.8239679358717, 2318.3904609218434, 2319.9569539078157, 2321.5234468937874, 2323.0899398797596, 2324.6564328657314, 2326.2229258517036, 2327.7894188376754, 2329.355911823647, 2330.9224048096194, 2332.488897795591, 2334.055390781563, 2335.621883767535, 2337.188376753507, 2338.7548697394786, 2340.321362725451, 2341.887855711423, 2343.454348697395, 2345.0208416833666, 2346.587334669339, 2348.1538276553106, 2349.7203206412823, 2351.2868136272546, 2352.8533066132263, 2354.4197995991985, 2355.9862925851703, 2357.5527855711425, 2359.1192785571143, 2360.685771543086, 2362.2522645290583, 2363.81875751503, 2365.385250501002, 2366.951743486974, 2368.518236472946, 2370.084729458918, 2371.6512224448898, 2373.217715430862, 2374.7842084168337, 2376.3507014028055, 2377.9171943887777, 2379.4836873747495, 2381.0501803607212, 2382.6166733466935, 2384.183166332665, 2385.749659318637, 2387.316152304609, 2388.882645290581, 2390.449138276553, 2392.015631262525, 2393.582124248497, 2395.148617234469, 2396.7151102204407, 2398.281603206413, 2399.8480961923847, 2401.4145891783564, 2402.9810821643287, 2404.5475751503004, 2406.1140681362726, 2407.6805611222444, 2409.2470541082166, 2410.8135470941884, 2412.38004008016, 2413.9465330661324, 2415.513026052104, 2417.079519038076, 2418.646012024048, 2420.2125050100203, 2421.778997995992, 2423.345490981964, 2424.911983967936, 2426.478476953908, 2428.0449699398796, 2429.611462925852, 2431.1779559118236, 2432.7444488977953, 2434.3109418837676, 2435.8774348697393, 2437.4439278557115, 2439.0104208416833, 2440.5769138276555, 2442.1434068136273, 2443.709899799599, 2445.2763927855713, 2446.842885771543, 2448.409378757515, 2449.975871743487, 2451.5423647294588, 2453.108857715431, 2454.6753507014027, 2456.241843687375, 2457.8083366733467, 2459.3748296593185, 2460.9413226452907, 2462.5078156312625, 2464.0743086172342, 2465.6408016032065, 2467.207294589178, 2468.77378757515, 2470.340280561122, 2471.9067735470944, 2473.473266533066, 2475.039759519038, 2476.60625250501, 2478.172745490982, 2479.7392384769537, 2481.305731462926, 2482.872224448898, 2484.43871743487, 2486.0052104208416, 2487.571703406814, 2489.1381963927856, 2490.7046893787574, 2492.2711823647296, 2493.8376753507014, 2495.404168336673, 2496.9706613226454, 2498.537154308617, 2500.1036472945893, 2501.670140280561, 2503.2366332665333, 2504.803126252505, 2506.369619238477, 2507.936112224449, 2509.502605210421, 2511.0690981963926, 2512.635591182365, 2514.2020841683366, 2515.7685771543083, 2517.3350701402805, 2518.9015631262523, 2520.4680561122245, 2522.0345490981963, 2523.6010420841685, 2525.1675350701403, 2526.734028056112, 2528.3005210420843, 2529.867014028056, 2531.433507014028, 2533.0])
+              .range(['#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#0065a1ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#36a6d8ff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#86d9ffff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#f1932eff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ff8a7aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#ca3c2aff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff', '#9f3236ff']);
     
 
-    color_map_61f1e920d1257433ecd358c6a4840559.x = d3.scale.linear()
-              .domain([2103.88, 2593.0])
+    color_map_bed042ce48fded01678dbeafd6500848.x = d3.scale.linear()
+              .domain([1751.32, 2533.0])
               .range([0, 450 - 50]);
 
-    color_map_61f1e920d1257433ecd358c6a4840559.legend = L.control({position: 'topright'});
-    color_map_61f1e920d1257433ecd358c6a4840559.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
-    color_map_61f1e920d1257433ecd358c6a4840559.legend.addTo(map_5f6402abfa78536ce191607ed61c662a);
+    color_map_bed042ce48fded01678dbeafd6500848.legend = L.control({position: 'topright'});
+    color_map_bed042ce48fded01678dbeafd6500848.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_bed042ce48fded01678dbeafd6500848.legend.addTo(map_cd3e01ef5cc46499ee52dc804b27f71f);
 
-    color_map_61f1e920d1257433ecd358c6a4840559.xAxis = d3.svg.axis()
-        .scale(color_map_61f1e920d1257433ecd358c6a4840559.x)
+    color_map_bed042ce48fded01678dbeafd6500848.xAxis = d3.svg.axis()
+        .scale(color_map_bed042ce48fded01678dbeafd6500848.x)
         .orient("top")
         .tickSize(1)
-        .tickValues([2107.76, 2131.04, 2202.16, 2264.0, 2343.2, 2396.0, 2405.04, 2593.0]);
+        .tickValues([1755.64, 1781.56, 1971.16, 2219.2, 2304.0, 2400.0, 2500.0, 2533.0]);
 
-    color_map_61f1e920d1257433ecd358c6a4840559.svg = d3.select(".legend.leaflet-control").append("svg")
+    color_map_bed042ce48fded01678dbeafd6500848.svg = d3.select(".legend.leaflet-control").append("svg")
         .attr("id", 'legend')
         .attr("width", 450)
         .attr("height", 40);
 
-    color_map_61f1e920d1257433ecd358c6a4840559.g = color_map_61f1e920d1257433ecd358c6a4840559.svg.append("g")
+    color_map_bed042ce48fded01678dbeafd6500848.g = color_map_bed042ce48fded01678dbeafd6500848.svg.append("g")
         .attr("class", "key")
         .attr("transform", "translate(25,16)");
 
-    color_map_61f1e920d1257433ecd358c6a4840559.g.selectAll("rect")
-        .data(color_map_61f1e920d1257433ecd358c6a4840559.color.range().map(function(d, i) {
+    color_map_bed042ce48fded01678dbeafd6500848.g.selectAll("rect")
+        .data(color_map_bed042ce48fded01678dbeafd6500848.color.range().map(function(d, i) {
           return {
-            x0: i ? color_map_61f1e920d1257433ecd358c6a4840559.x(color_map_61f1e920d1257433ecd358c6a4840559.color.domain()[i - 1]) : color_map_61f1e920d1257433ecd358c6a4840559.x.range()[0],
-            x1: i < color_map_61f1e920d1257433ecd358c6a4840559.color.domain().length ? color_map_61f1e920d1257433ecd358c6a4840559.x(color_map_61f1e920d1257433ecd358c6a4840559.color.domain()[i]) : color_map_61f1e920d1257433ecd358c6a4840559.x.range()[1],
+            x0: i ? color_map_bed042ce48fded01678dbeafd6500848.x(color_map_bed042ce48fded01678dbeafd6500848.color.domain()[i - 1]) : color_map_bed042ce48fded01678dbeafd6500848.x.range()[0],
+            x1: i < color_map_bed042ce48fded01678dbeafd6500848.color.domain().length ? color_map_bed042ce48fded01678dbeafd6500848.x(color_map_bed042ce48fded01678dbeafd6500848.color.domain()[i]) : color_map_bed042ce48fded01678dbeafd6500848.x.range()[1],
             z: d
           };
         }))
@@ -431,7 +792,7 @@
         .attr("width", function(d) { return d.x1 - d.x0; })
         .style("fill", function(d) { return d.z; });
 
-    color_map_61f1e920d1257433ecd358c6a4840559.g.call(color_map_61f1e920d1257433ecd358c6a4840559.xAxis).append("text")
+    color_map_bed042ce48fded01678dbeafd6500848.g.call(color_map_bed042ce48fded01678dbeafd6500848.xAxis).append("text")
         .attr("class", "caption")
         .attr("y", 21)
         .text("Monthly rent (\u200e\u20ac)");
